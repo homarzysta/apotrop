@@ -20,7 +20,7 @@ class Stamina:
             self.bar.fill(self.COLOR_FULL)
         percentage = (self.value / self.max_value) * 100
         self.bar_resized = pygame.transform.scale(self.bar, (percentage * self.resolution[0] / 100, self.resolution[1]))
-        self.position[0] = SCREEN.width / 2 - self.bar_resized.width / 2
+        self.position[0] = SCREEN.get_width() / 2 - self.bar_resized.get_width() / 2
 
     def increase(self, amount):
         self.value += amount
