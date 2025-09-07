@@ -6,7 +6,7 @@ import math
 # Pygame windows settings
 pygame.init()
 SCREEN = pygame.display.set_mode((1280, 720), pygame.RESIZABLE)
-CLOCK = pygame.Clock()
+CLOCK = pygame.time.Clock()
 AMBIENT_COLOR = (0, 0, 10)
 pygame.display.set_caption("Apotrop")
 
